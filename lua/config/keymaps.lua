@@ -21,6 +21,7 @@ vim.keymap.set("v", "<leader>d", "\"_d")
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 --LSP
 vim.keymap.set('i', '<C-Space>', '<C-x><C-o>')
+require("config.lsp_keymaps")
 --Telescope
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope find files' })
