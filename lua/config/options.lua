@@ -22,5 +22,5 @@ require("config.plugins.playground")
 require("config.plugins.roslyn")
 
 --vim.cmd("set completeopt+=noselect")
-vim.lsp.enable({'rust_analyzer'})
+vim.lsp.enable({'biome'})
 
