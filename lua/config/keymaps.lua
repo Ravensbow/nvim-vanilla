@@ -43,3 +43,27 @@ vim.keymap.set('n', 'gr', builtin.lsp_references, { desc = 'Show all references'
 vim.keymap.set('n', 'gI', builtin.lsp_implementations, { desc = 'Goto implementation' })
 vim.keymap.set('n', 'gy', builtin.lsp_type_definitions, { desc = 'Goto type definition' })
 vim.keymap.set('n', '<leader>xx', builtin.diagnostics, { desc = 'Diagnostics' })
+
+--Windows
+-- Increase window height
+vim.keymap.set('n', '<C-Up>', ':resize +2<CR>')
+-- Decrease window height
+vim.keymap.set('n', '<C-Down>', ':resize -2<CR>')
+-- Increase window width
+vim.keymap.set('n', '<C-Right>', ':vertical resize +2<CR>')
+-- Decrease window width
+vim.keymap.set('n', '<C-Left>', ':vertical resize -2<CR>')
+-- Move to window left
+vim.keymap.set('n', '<C-h>', '<C-w>h')
+-- Move to window down
+vim.keymap.set('n', '<C-j>', '<C-w>j')
+-- Move to window up
+vim.keymap.set('n', '<C-k>', '<C-w>k')
+-- Move to window right
+vim.keymap.set('n', '<C-l>', '<C-w>l')
+-- Split window below
+vim.keymap.set('n', '<leader>-', ':split<CR>')
+-- Split window right (vertically)
+vim.keymap.set('n', '<leader>|', ':vsplit<CR>')
+-- Delete (close) the current window
+vim.keymap.set('n', '<leader>wd', ':close<CR>')
