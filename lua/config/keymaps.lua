@@ -67,3 +67,8 @@ vim.keymap.set('n', '<leader>-', ':split<CR>')
 vim.keymap.set('n', '<leader>|', ':vsplit<CR>')
 -- Delete (close) the current window
 vim.keymap.set('n', '<leader>wd', ':close<CR>')
+
+
+-- Code companion
+vim.keymap.set({ "n", "v" }, "<C-a>", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true, desc = "Show CodeCompanion Actions" })
+vim.keymap.set({ "n", "v" }, "<leader>a", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true, desc = "Toggle CodeCompaion Chat" })
