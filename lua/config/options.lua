@@ -22,6 +22,5 @@ require("config.plugins.playground")
 require("config.plugins.mason")
 
 --vim.cmd("set completeopt+=noselect")
-vim.lsp.enable({'angularls'})
 require("mini.pairs").setup()
 require('Comment').setup()
