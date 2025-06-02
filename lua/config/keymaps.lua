@@ -12,6 +12,8 @@ vim.keymap.set("n", "N", "Nzzzv")
 --pastowanie na cos bez zastepowania paste buffer tym co bylo zaznaczone 
 --vim.keymap.set("x", "<leader>p", "\"_dP")
 --kopiowanie rowniez do systemowego schowka
+vim.keymap.set("n", "<leader>p", "\"+p")
+vim.keymap.set("v", "<leader>p", "\"+p")
 vim.keymap.set("n", "<leader>y", "\"+y")
 vim.keymap.set("v", "<leader>y", "\"+y")
 vim.keymap.set("n", "<leader>Y", "\"+Y")
