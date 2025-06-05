@@ -6,6 +6,15 @@ return {
 			pickers = {
 				find_files = {
 					theme = "dropdown",
+				},
+				git_files = {
+					theme = "dropdown",
+				},
+				lsp_definitions = {
+					initial_mode = "normal",
+				},
+				lsp_references = {
+					initial_mode = "normal",
 				}
 			},
 		}

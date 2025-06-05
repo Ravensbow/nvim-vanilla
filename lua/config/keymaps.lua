@@ -40,7 +40,7 @@ vim.keymap.set('n', '<leader>gc', builtin.git_commits, { desc = 'Telescope git c
 vim.keymap.set('n', '<leader>gb', builtin.git_branches, { desc = 'Telescope git branches' })
 vim.keymap.set('n', '<leader>fall', builtin.builtin, { desc = 'Telescope all builtin pickers' })
 
-vim.keymap.set('n', 'gd', builtin.lsp_definitions, { desc = 'Goto definition' })
+vim.keymap.set('n', 'gd', builtin.lsp_definitions, { desc = 'Goto definition', })
 vim.keymap.set('n', 'gr', builtin.lsp_references, { desc = 'Show all references' })
 vim.keymap.set('n', 'gI', builtin.lsp_implementations, { desc = 'Goto implementation' })
 vim.keymap.set('n', 'gy', builtin.lsp_type_definitions, { desc = 'Goto type definition' })
@@ -70,7 +70,3 @@ vim.keymap.set('n', '<leader>|', ':vsplit<CR>')
 -- Delete (close) the current window
 vim.keymap.set('n', '<leader>wd', ':close<CR>')
 
-
--- Code companion
-vim.keymap.set({ "n", "v" }, "<C-a>", "<cmd>CodeCompanionActions<cr>", { noremap = true, silent = true, desc = "Show CodeCompanion Actions" })
-vim.keymap.set({ "n", "v" }, "<leader>a", "<cmd>CodeCompanionChat Toggle<cr>", { noremap = true, silent = true, desc = "Toggle CodeCompaion Chat" })
