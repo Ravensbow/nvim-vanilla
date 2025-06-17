@@ -18,7 +18,6 @@ vim.opt.tabstop = 4
 
 require("config.plugins.lualine")
 require("config.plugins.treesitter")
-require("config.plugins.playground")
 require("config.plugins.mason")
 
 --vim.cmd("set completeopt+=noselect")
