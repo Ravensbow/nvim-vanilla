@@ -70,3 +70,11 @@ vim.keymap.set('n', '<leader>|', ':vsplit<CR>')
 -- Delete (close) the current window
 vim.keymap.set('n', '<leader>wd', ':close<CR>')
 
+vim.keymap.set('n', '<leader>st', function ()
+	vim.cmd.vnew()
+	vim.cmd.term()
+	vim.cmd.wincmd("J")
+	vim.api.nvim_win_set_height(0, 15)
+end, { desc = 'Open small terminal at the bottom' })
+
+vim.keymap.set('n', '<C-/>', '<cmd>nohlsearch<CR>', { desc = 'Clear search highlight'})

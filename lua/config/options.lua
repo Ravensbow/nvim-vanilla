@@ -23,3 +23,12 @@ require("config.plugins.mason")
 --vim.cmd("set completeopt+=noselect")
 require("mini.pairs").setup()
 require('Comment').setup()
+
+vim.api.nvim_create_autocmd('TermOpen', {
+	desc = 'Settings of nvim build in terminal',
+	group = vim.api.nvim_create_augroup('custom-term-open', { clear = true, }),
+	callback = function ()
+		vim.opt.number = false
+		vim.opt.relativenumber = false
+	end,
+})
