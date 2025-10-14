@@ -55,7 +55,7 @@ vim.api.nvim_create_autocmd('LspAttach', {
 
 		-- Next Diagnostic/Reference
 		opts.desc = "Next Diagnostic/Reference"
-		vim.keymap.set('n', ']]', vim.diagnostic.jump, opts)
+		vim.keymap.set('n', ']]', function() vim.diagnostic.jump({count = 1}) end, opts)
 		opts.desc = "Next Diagnostic/Reference (Alt+n)"
 		vim.keymap.set('n', '<a-n>', vim.diagnostic.jump, opts)
 
