@@ -77,3 +77,11 @@ vim.api.nvim_create_autocmd('LspAttach', {
 		--end
 	end,
 })
+
+-- Restart LSP when saving a new .cs file to pick up new files in .NET projects
+vim.api.nvim_create_autocmd("BufWritePost", {
+	pattern = "*.cs",
+	callback = function()
+		vim.cmd("LspRestart")
+	end,
+})
